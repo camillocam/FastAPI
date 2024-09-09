@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8b97117-7b19-4ac4-a8a5-ee4038d484a6" name="Changes" comment="">
+    <list default="true" id="e8b97117-7b19-4ac4-a8a5-ee4038d484a6" name="Changes" comment="Fist update">
       <change afterPath="$PROJECT_DIR$/.idea/FastAPI_Project.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/routers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/routers/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/routers/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/routers/todos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TodoApp/routers/users.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/books2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +50,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/raffaele/PycharmProjects/FastAPI_Project&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/raffaele/PycharmProjects/FastAPI_Project",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -94,6 +84,19 @@
       <option name="presentableId" value="Default" />
       <updated>1725895472080</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fist update">
+      <option name="closed" value="true" />
+      <created>1725897797744</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725897797744</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fist update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fist update" />
   </component>
 </project>
