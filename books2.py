@@ -1,6 +1,6 @@
 from typing import Optional
 from fastapi import FastAPI, HTTPException, Request, status, Form, Header
-from pydantic import BaseModel, Field
+from pydantic import ConfigDict, BaseModel, Field
 from uuid import UUID
 from starlette.responses import JSONResponse
 
@@ -17,37 +17,32 @@ class Book(BaseModel):
     id: UUID
     title: str = Field(min_length=1)
     author: str = Field(min_length=1, max_length=100)
-    description: Optional[str] = Field(description="Description of book", max_length=100, min_length=1)
+    description: Optional[str] = Field(None, description="Description of book", max_length=100, min_length=1)
     rating: int = Field(gt=-1, lt=101)
-
-    class Config:
-        json_schema_extra = {
-            "example": {
-                "id": "eef28e06-2eae-4603-9193-46e73b580eee",
-                "title": " Title Baby",
-                "author": "Example Author !!",
-                "description": "Description nice to you",
-                "rating": 80
-            }
+    model_config = ConfigDict(json_schema_extra={
+        "example": {
+            "id": "eef28e06-2eae-4603-9193-46e73b580eee",
+            "title": " Title Baby",
+            "author": "Example Author !!",
+            "description": "Description nice to you",
+            "rating": 80
         }
+    })
 
 
 class BookNoRating(BaseModel):
     id: UUID
     title: str = Field(min_length=1)
     author: str = Field(min_length=1, max_length=100)
-    description: Optional[str] = Field(description="Description of book", max_length=100, min_length=1)
-
-
-    class Config:
-        json_schema_extra = {
-            "example": {
-                "id": "eef28e06-2eae-4603-9193-46e73b580eee",
-                "title": " Title Baby",
-                "author": "Example Author !!",
-                "description": "Description nice to you"
-            }
+    description: Optional[str] = Field(None, description="Description of book", max_length=100, min_length=1)
+    model_config = ConfigDict(json_schema_extra={
+        "example": {
+            "id": "eef28e06-2eae-4603-9193-46e73b580eee",
+            "title": " Title Baby",
+            "author": "Example Author !!",
+            "description": "Description nice to you"
         }
+    })
 
 
 BOOKS = []

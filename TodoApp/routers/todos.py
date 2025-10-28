@@ -3,7 +3,7 @@ from fastapi import Depends,HTTPException,APIRouter
 from sqlalchemy.orm import Session
 import models
 from database import engine,SessionLocal
-from pydantic import BaseModel, Field
+from pydantic import ConfigDict, BaseModel, Field
 from routers.auth import get_current_user, get_user_exception,get_user_excetpion_unauthorized
 
 
@@ -25,18 +25,17 @@ def get_db():
 
 class Todo (BaseModel):
     title: str
-    description : Optional[str]
+    description : Optional[str] = None
     priority: int = Field (gt=0, lt=6, description="The priority as between 1-5")
     complete: bool
-    class Config:
-        json_schema_extra = {
-            "example": {
-                "title": "We are in Summer",
-                "description": "Now we are in summer edition",
-                "priority": 4,
-                "complete": False
-            }
+    model_config = ConfigDict(json_schema_extra={
+        "example": {
+            "title": "We are in Summer",
+            "description": "Now we are in summer edition",
+            "priority": 4,
+            "complete": False
         }
+    })
 
 
 @router.get("/")

@@ -15,7 +15,7 @@ ALGORITHM = "HS256"
 
 class CreateUser(BaseModel):
     username: str
-    email: Optional[str]
+    email: Optional[str] = None
     first_name: str
     last_name: str
     password: str
